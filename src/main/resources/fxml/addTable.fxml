@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="root" prefHeight="159.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ControllerAddTable">
+   <children>
+      <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <HBox>
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="87.0" text="Код товара  " textAlignment="CENTER" />
+                  <TextField fx:id="cod" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="87.0" text="Наименование" textAlignment="CENTER" />
+                  <TextField fx:id="name" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="87.0" text="Цена" textAlignment="CENTER" />
+                  <TextField fx:id="sena" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="87.0" text="Кол. на складе" textAlignment="CENTER" />
+                  <TextField fx:id="col" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label contentDisplay="CENTER" prefWidth="87.0" text="Фактическое количество" textAlignment="CENTER" />
+                  <TextField fx:id="fact" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Button maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#add" text="Добавить" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
